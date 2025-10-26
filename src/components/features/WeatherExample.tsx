@@ -1,23 +1,45 @@
-import type { WeatherFeature } from "@/types/weather";
-import { WeatherForecastCard } from "../ui/cards/Weather";
+import { type ForecastLocation, type ForecastResponse } from "@/types/weather";
+import { WeatherCard } from "../ui/cards/WeatherCard";
 
-export function WeatherExample({ data }: { data?: WeatherFeature }) {
-  const snapshot = data?.properties.timeseries.filter(
-    (_, index) => index % 12 == 0
+export function WeatherExample({ data }: { data?: ForecastLocation[] }) {
+  // Vi bruker intl til å lage en formatter som gir oss ukedag navn
+  const formatter = new Intl.DateTimeFormat("nb-NO", {
+    weekday: "long",
+    timeZone: "Europe/Oslo",
+  });
+
+  // Vi lager oss en liste for de neste 4 ukedagene som vi kan bruke i komponentet
+  const today = new Date();
+  const days = Array.from(
+    { length: 4 },
+    (_, i) => {
+      const d = new Date(today);
+      d.setDate(d.getDate() + i);
+      return formatter.format(d);
+    },
+    []
   );
+
   return (
-    <div className="flex flex-col">
+    <section>
       <h2>Værmelding eksempel</h2>
-      <span className="grid grid-cols-4">
-        <p>klokken</p>
-        <p>temp</p>
-        <p>vind</p>
-        <p>vær</p>
-      </span>
-      {snapshot &&
-        snapshot.map((forecast) => (
-          <WeatherForecastCard key={forecast.time} forecast={forecast} />
+      <p>
+        Dette eksempelet henter inn først litt data på serveren, så tar clienten
+        over og henter mer info etter noen sekunder
+      </p>
+      <div className="flex flex-col gap-2 p-2 rounded-md bg-sky-200 text-black">
+        <span className="flex gap-6 text-slate-600 *:p-2">
+          <p className="flex-1">Lokasjon</p>
+          {days.map((day) => (
+            <p key={day} className="w-full max-w-24">
+              {day}
+            </p>
+          ))}
+        </span>
+        {data?.map((forecast, index) => (
+          <WeatherCard key={`forecast-${index}`} forecast={forecast} />
         ))}
-    </div>
+      </div>
+    </section>
   );
 }

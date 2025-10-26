@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Bergen",
+    "lon": 5.32,
+    "lat": 60.38
+  },{
+    "name": "Oslo",
+    "lon": 10.75,
+    "lat": 59.91
+  },{
+    "name": "Trondheim",
+    "lon": 10.40,
+    "lat": 63.44
+  }
+]
