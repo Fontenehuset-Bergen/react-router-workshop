@@ -21,19 +21,25 @@ export function WeatherExample({ data }: { data?: ForecastLocation[] }) {
   );
 
   return (
-    <div className="flex flex-col gap-2 p-2 rounded-md bg-sky-200 text-black">
+    <section>
       <h2>Værmelding eksempel</h2>
-      <span className="flex gap-6 text-slate-600 *:p-2">
-        <p className="flex-1">Lokasjon</p>
-        {days.map((day) => (
-          <p key={day} className="w-full max-w-24">
-            {day}
-          </p>
+      <p>
+        Dette eksempelet henter inn først litt data på serveren, så tar clienten
+        over og henter mer info etter noen sekunder
+      </p>
+      <div className="flex flex-col gap-2 p-2 rounded-md bg-sky-200 text-black">
+        <span className="flex gap-6 text-slate-600 *:p-2">
+          <p className="flex-1">Lokasjon</p>
+          {days.map((day) => (
+            <p key={day} className="w-full max-w-24">
+              {day}
+            </p>
+          ))}
+        </span>
+        {data?.map((forecast, index) => (
+          <WeatherCard key={`forecast-${index}`} forecast={forecast} />
         ))}
-      </span>
-      {data?.map((forecast, index) => (
-        <WeatherCard key={`forecast-${index}`} forecast={forecast} />
-      ))}
-    </div>
+      </div>
+    </section>
   );
 }
