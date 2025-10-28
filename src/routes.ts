@@ -18,6 +18,7 @@ export default [
     route("client", "pages/contact/versions/ClientForm.tsx"),
     route("fetcher", "pages/contact/versions/FetcherForm.tsx"),
     route("server", "pages/contact/versions/ServerForm.tsx"),
+    route("validation", "pages/contact/versions/ValidationForm.tsx"),
   ]),
   ...prefix("faq", [
     layout("components/layout/sidebar.tsx", [

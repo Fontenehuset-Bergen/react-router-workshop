@@ -12,21 +12,35 @@ export default function Page() {
         <span className="flex gap-2 justify-between">
           <NavLink
             to="/contact/client"
-            className={({ isActive }) => `${isActive ? "!underline !text-orange-400" : ""}`}
+            className={({ isActive }) =>
+              `${isActive ? "!underline !text-orange-400" : ""}`
+            }
           >
             Ren klient
           </NavLink>
           <NavLink
             to="/contact/fetcher"
-            className={({ isActive }) => `${isActive ? "!underline !text-orange-400" : ""}`}
+            className={({ isActive }) =>
+              `${isActive ? "!underline !text-orange-400" : ""}`
+            }
           >
             Klient med fetcher
           </NavLink>
           <NavLink
             to="/contact/server"
-            className={({ isActive }) => `${isActive ? "!underline !text-orange-400" : ""}`}
+            className={({ isActive }) =>
+              `${isActive ? "!underline !text-orange-400" : ""}`
+            }
           >
             Server actions
+          </NavLink>
+          <NavLink
+            to="/contact/validation"
+            className={({ isActive }) =>
+              `${isActive ? "!underline !text-orange-400" : ""}`
+            }
+          >
+            Server actions med validering
           </NavLink>
         </span>
         <hr />
