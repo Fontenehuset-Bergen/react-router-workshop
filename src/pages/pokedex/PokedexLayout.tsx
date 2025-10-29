@@ -1,6 +1,6 @@
 import type { Pokedex } from "@/types/pokemon";
 import { NavLink, Outlet, useLoaderData } from "react-router";
-import type { Route } from "../+types/home";
+import type { Route } from "./+types/PokedexLayout";
 
 export async function loader({ request }: Route.LoaderArgs) {
   console.log("Fetching Pokedex");

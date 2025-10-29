@@ -1,6 +1,6 @@
 import { isRouteErrorResponse, useRouteError } from "react-router";
-import type { Route } from "./+types/contactPage";
 import contacts from "@/data/contacts/details.json";
+import type { Route } from "./+types/contactPage";
 
 export async function loader({ params }: Route.LoaderArgs) {
   const index = Math.abs(Number(params.id));
