@@ -61,8 +61,8 @@ export default function PokemonByName() {
       <div>
         {pokemon?.stats.map((stat) => (
           <span key={stat.stat.name} className="flex gap-2">
-            <p>{stat.stat.name}</p>
-            <p>{stat.base_stat}</p>
+            <p className="uppercase">{stat.stat.name}</p>
+            <p className="ml-auto">{stat.base_stat}</p>
           </span>
         ))}
         {!pokemon && <p className="text-center">A wild missigno appeared!</p>}

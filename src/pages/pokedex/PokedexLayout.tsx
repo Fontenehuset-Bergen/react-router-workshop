@@ -30,8 +30,8 @@ export default function PokemonLayout() {
 
   return (
     <main>
-      <div>
-        <div>
+      <div className="flex gap-2 p-4 bg-red-500">
+        <div className="h-64 flex flex-col overflow-y-scroll p-2 bg-slate-400 text-black ">
           {pokedex.results.map((pokemon, index) => (
             <NavLink
               key={pokemon.name}

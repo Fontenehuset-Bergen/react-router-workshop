@@ -3,7 +3,7 @@ import contactList from "@/data/contacts/details.json"
 
 export default function Layout() {
   return (
-    <main className="flex flex-row gap-6">
+    <main className="flex !flex-row gap-6">
       <aside className="flex flex-col gap-2">
         <NavLink to={"/contacts/"} className="text-center">
           <p>Return</p>
