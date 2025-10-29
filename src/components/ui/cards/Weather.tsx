@@ -1,4 +1,4 @@
-import type { TimeseriesEntry } from "@/types/weather";
+import type { ForecastTimeStep } from "@/types/weather";
 import { MoveUp, Thermometer } from "lucide-react";
 
 function Compass({ deg }: { deg?: number }) {
@@ -9,13 +9,18 @@ function Compass({ deg }: { deg?: number }) {
 export function WeatherForecastCard({
   forecast,
 }: {
-  forecast?: TimeseriesEntry;
+  forecast?: ForecastTimeStep;
 }) {
   const date = new Date(forecast?.time!);
   return (
     <span className="grid grid-cols-4 p-4 bg-sky-100 text-black">
       <span>
-        <p>{date.toLocaleString("no-NB", {dateStyle: "medium", timeStyle: "short"})}</p>
+        <p>
+          {date.toLocaleString("no-NB", {
+            dateStyle: "medium",
+            timeStyle: "short",
+          })}
+        </p>
       </span>
 
       <span className="flex gap-2 my-auto">

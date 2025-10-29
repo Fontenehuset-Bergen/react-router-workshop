@@ -14,7 +14,12 @@ import {
 export default [
   index("pages/home.tsx"),
   route("about", "pages/about/page.tsx"),
-  route("contact", "pages/contact/page.tsx"),
+  route("contact", "pages/contact/page.tsx", [
+    route("client", "pages/contact/versions/ClientForm.tsx"),
+    route("fetcher", "pages/contact/versions/FetcherForm.tsx"),
+    route("server", "pages/contact/versions/ServerForm.tsx"),
+    route("validation", "pages/contact/versions/ValidationForm.tsx"),
+  ]),
   ...prefix("faq", [
     layout("components/layout/sidebar.tsx", [
       index("pages/faq/faqIndex.tsx"),
