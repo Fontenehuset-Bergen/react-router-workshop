@@ -39,6 +39,7 @@ export default [
       route(":name", "pages/pokedex/name/PokemonPage.tsx"),
     ]),
   ]),
+  route("newsletter", "pages/newsletter/NewsletterPage.tsx"),
   route("/.well-known/appspecific/com.chrome.devtools.json", "debug-null.tsx"),
   route("*", "./not-found.tsx"),
 ] satisfies RouteConfig;

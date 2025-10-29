@@ -2,5 +2,6 @@
   { "label": "Hjem", "href": "/" },
   { "label": "Pokedex", "href": "/pokedex" },
   { "label": "Om oss", "href": "/about" },
-  { "label": "Kontakt", "href": "/contact" }
+  { "label": "Kontakt", "href": "/contact" },
+  { "label": "News", "href": "/newsletter" }
 ]
