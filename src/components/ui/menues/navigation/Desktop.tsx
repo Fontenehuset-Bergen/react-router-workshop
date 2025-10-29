@@ -9,7 +9,7 @@ export function NavBarDesktop({ links }: { links: NavigationalData[] }) {
           key={item.label}
           to={item.href}
           className={({ isActive }) =>
-            `text-white ${isActive ? "text-yellow-400 underline" : ""}`
+            `text-white p-4 ${isActive ? "text-yellow-400 underline" : ""}`
           }
         >
           {item.label}
