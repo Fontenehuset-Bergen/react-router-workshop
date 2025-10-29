@@ -1,0 +1,11 @@
+[
+    {
+        "name": "Ole Nordmann",
+        "phone":  "99224455",
+        "address": "Hakke Bakke takken 24"
+    }, {
+        "name": "Kari Nordmann",
+        "phone": "22445511",
+        "address": "Takken veien 24"
+    }
+]

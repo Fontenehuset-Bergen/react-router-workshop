@@ -2,8 +2,9 @@ import type { Pokemon } from "@/types/pokemon";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
+import type { Route } from "./+types/PokemonPage";
 
-export async function loader({ params, request }) {
+ export async function loader({ params, request }: Route.LoaderArgs) {
   console.log(`fetching ${params.name}...`);
   const response = await fetch(
     `https://pokeapi.co/api/v2/pokemon/${params.name}`,
@@ -20,7 +21,7 @@ export async function loader({ params, request }) {
   }
   const data: Pokemon = await response.json();
   return data;
-}
+} 
 
 export default function PokemonByName() {
   const pokemon = useLoaderData<typeof loader>();
