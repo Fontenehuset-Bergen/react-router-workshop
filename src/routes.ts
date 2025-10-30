@@ -27,7 +27,7 @@ export default [
     layout("pages/pokedex/PokedexLayout.tsx", [
       index("pages/pokedex/PokedexPage.tsx"),
       route("name","pages/pokedex/name/PokemonPage.tsx")
-    ])
+    ]),
   ]),
   route("*", "not-found.tsx"),
 ] satisfies RouteConfig;
