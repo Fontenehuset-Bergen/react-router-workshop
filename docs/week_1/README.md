@@ -8,8 +8,8 @@ Velkommen til introduksjon i front-end rammeverk for Fontenehuset Bergen. Vi sit
 - [Styling](./4_styling.md)
 
 <table width="100%">
-  <tr>
-    <td><a href="../README.md">← Tilbake til index</a></td>
-    <td align="right"><a href="1_installation.md">Start →</a></td>
-  </tr>
+<tr>
+<td><a href="../README.md">← Tilbake til index</a></td>
+<td align="right"><a href="1_installation.md">Start →</a></td>
+</tr>
 </table>
