@@ -14,5 +14,17 @@ Velkommen til introduksjon i front-end rammeverk for Fontenehuset Bergen. Vi sit
 </tr>
 </table>
 
+---
+
 | [← Index](../README.md) | [Javascript recap →](./1_javascript.md) |
 | :---------------------- | ------------------------------: |
+
+<hr/>
+
+<table>
+  <tr>
+    <td align="left"><a href="../README.md">← Index</a></td>
+    <td align="right"><a href="./1_javascript.md">Javascript recap →</a></td>
+  </tr>
+</table>
+
