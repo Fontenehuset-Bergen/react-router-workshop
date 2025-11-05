@@ -13,3 +13,6 @@ Velkommen til introduksjon i front-end rammeverk for Fontenehuset Bergen. Vi sit
 <td align="right"><a href="1_installation.md">Start →</a></td>
 </tr>
 </table>
+
+| [← Index](../README.md) | [Javascript recap →](./1_javascript.md) |
+| :---------------------- | ------------------------------: |
