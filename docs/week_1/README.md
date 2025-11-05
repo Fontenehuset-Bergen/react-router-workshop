@@ -10,21 +10,8 @@ Velkommen til introduksjon i front-end rammeverk for Fontenehuset Bergen. Vi sit
 <table width="100%">
 <tr>
 <td><a href="../README.md">← Tilbake til index</a></td>
+<td align="center"></td>
 <td align="right"><a href="1_installation.md">Start →</a></td>
 </tr>
-</table>
-
----
-
-| [← Index](../README.md) | [Javascript recap →](./1_javascript.md) |
-| :---------------------- | ------------------------------: |
-
-<hr/>
-
-<table>
-  <tr>
-    <td align="left"><a href="../README.md">← Index</a></td>
-    <td align="right"><a href="./1_javascript.md">Javascript recap →</a></td>
-  </tr>
 </table>
 
