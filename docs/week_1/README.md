@@ -10,7 +10,7 @@ Velkommen til introduksjon i front-end rammeverk for Fontenehuset Bergen. Vi sit
 <table width="100%">
 <tr>
 <td><a href="../README.md">← Tilbake til index</a></td>
-<td align="center"></td>
+<td align="center" width="100%"></td>
 <td align="right"><a href="1_installation.md">Start →</a></td>
 </tr>
 </table>
